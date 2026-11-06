@@ -22,9 +22,19 @@
 
     <button onclick="calculateBMI()">계산하기</button>
 
-
-    <div id="result"></div>
-    <div id="state"></div> 
+    <!-- 결과 시각 자료표 (처음엔 숨겨져 있다가 계산하면 나타납니다) -->
+    <div id="result-box">
+      <div id="result"></div>
+      <div id="state"></div> 
+      
+      <!-- BMI 기준표 -->
+      <div class="reference-table">
+        <div class="ref-item" id="ref-under"><span>저체중</span><span>18.5 미만</span></div>
+        <div class="ref-item" id="ref-normal"><span>정상</span><span>18.5 ~ 22.9</span></div>
+        <div class="ref-item" id="ref-over"><span>과체중</span><span>23.0 ~ 24.9</span></div>
+        <div class="ref-item" id="ref-obese"><span>비만</span><span>25.0 이상</span></div>
+      </div>
+    </div>
         
     <script src="./script.js"></script>
   </body>
